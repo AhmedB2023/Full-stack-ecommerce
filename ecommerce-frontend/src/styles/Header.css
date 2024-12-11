@@ -1,0 +1,49 @@
+/* Style the navigation bar */
+.navbar {
+    display: flex; /* Align items horizontally */
+    justify-content: space-between; /* Space out items */
+    align-items: center; /* Vertically align items */
+    background-color: #f4f4f4; /* Light background */
+    padding: 10px 20px; /* Add padding around the navbar */
+    border-bottom: 1px solid #ddd; /* Subtle border for separation */
+}
+
+/* Style the list inside the navigation */
+.navbar-list {
+    display: flex; /* Arrange list items horizontally */
+    list-style: none; /* Remove bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Style individual navigation items */
+.navbar-list li {
+    margin: 0 15px; /* Add space between links */
+}
+
+/* Style navigation links */
+.navbar-list a {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Dark text color */
+    font-weight: bold; /* Bold text for emphasis */
+    font-size: 16px; /* Larger font size */
+}
+
+/* Add hover effect to navigation links */
+.navbar-list a:hover {
+    color: #007bff; /* Change to blue on hover */
+}
+
+/* Logout button styling (if applicable) */
+.logout-button {
+    background: none; /* No background */
+    border: none; /* Remove border */
+    color: #007bff; /* Blue text color */
+    cursor: pointer; /* Pointer cursor for interactivity */
+    font-weight: bold; /* Bold text */
+    font-size: 16px; /* Match link font size */
+}
+
+.logout-button:hover {
+    text-decoration: underline; /* Underline on hover */
+}

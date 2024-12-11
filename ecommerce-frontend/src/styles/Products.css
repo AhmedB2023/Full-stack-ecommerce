@@ -1,0 +1,83 @@
+/* General list styles */
+ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+/* Product item styles */
+li {
+    display: flex; /* Flexbox for alignment */
+    justify-content: space-between; /* Space content and button */
+    align-items: center; /* Center align items */
+    padding: 15px; /* Add more spacing for larger clickable areas */
+    margin-bottom: 15px; /* Increase spacing between items */
+    border-radius: 8px; /* Smooth rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+    background-color: #ffffff; /* White background for better contrast */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover transitions */
+    border: 1px solid #e0e0e0; /* Light border for subtle separation */
+}
+
+li:hover {
+    background-color: #f5f5f5; /* Slightly darker hover background */
+    transform: translateY(-3px); /* Lift the card on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+    cursor: pointer; /* Pointer cursor for interactivity */
+}
+
+/* Product details section */
+.product-details {
+    margin-top: 20px;
+    padding: 20px; /* Larger padding for a more spacious look */
+    border-radius: 8px; /* Smooth rounded corners */
+    background-color: #f9f9f9; /* Light gray background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for card effect */
+    border: 1px solid #e0e0e0; /* Light border for consistency */
+}
+
+/* Cart section styles */
+.cart {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px; /* Smooth rounded corners */
+    background-color: #f4f8ff; /* Soft blue background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border: 1px solid #d0d7e2; /* Light blue border for consistency */
+}
+
+/* Button styles */
+button {
+    padding: 12px 20px; /* Larger padding for better aesthetics */
+    background-color: #007bff; /* Vibrant blue background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    border-radius: 6px; /* Smooth rounded corners */
+    cursor: pointer; /* Pointer cursor for buttons */
+    font-weight: bold; /* Bold text for emphasis */
+    font-size: 16px; /* Larger font size for readability */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    li {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    button {
+        width: 100%; /* Full-width buttons for mobile devices */
+        margin-top: 10px; /* Add spacing between stacked elements */
+    }
+
+    .cart {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+}
