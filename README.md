@@ -23,5 +23,5 @@ Navigate to the ecommerce-backend folder.
    ```
 2. Start the backend server using nodemon:
    ```bash
-npx nodemon server.js
-```
+   npx nodemon server.js
+   ```
